@@ -15,11 +15,11 @@ import com.jiachenglin.demo.utils.PageUtils;
 
 @Controller
 public class GoodsController {
-	
+	//dingyidsa
 	@Resource
 	private RedisTemplate<Object, Object> redisTemplate;
 	
-	
+	//查询方法
 	@RequestMapping("list")
 	public String findList(Model model) {
 		BoundListOperations<Object, Object> boundListOps = redisTemplate.boundListOps("goodsList");
