@@ -19,6 +19,7 @@ public class GoodsController {
 	@Resource
 	private RedisTemplate<Object, Object> redisTemplate;
 	
+	
 	@RequestMapping("list")
 	public String findList(Model model) {
 		BoundListOperations<Object, Object> boundListOps = redisTemplate.boundListOps("goodsList");
